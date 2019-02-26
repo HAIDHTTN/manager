@@ -55,11 +55,11 @@ export default {
         if (valid) {
           // 成功
           this.$axios.post("login", this.formData).then(res => {
-            console.log(res);
+            // console.log(res);
             
           //  登录成功
             if (res.data.meta.status == 200) {
-              this.$message.success(res.data.meta.msg );
+              // this.$message.success(res.data.meta.msg );
                // 保存token到sessionStorage
                window.sessionStorage.setItem("token",res.data.data.token);
                 // 去首页:编程式导航
@@ -67,7 +67,7 @@ export default {
             } 
             // 登录失败
             else if (res.data.meta.status == 400) {
-              this.$message.error(res.data.meta.msg);
+              // this.$message.error(res.data.meta.msg);
             }
           });
         } else {

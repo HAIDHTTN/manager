@@ -9,8 +9,9 @@ import VueAxios from "./lib/vue-axios";
 Vue.use(VueAxios)
 // 引入自己抽取的vue-router
 import router from "./lib/vue-router"
-
-
+// 引入组件面包屑
+import breadcrumb from './components/breadcrumb.vue'
+Vue.component('breadcrumb', breadcrumb)
 // 导入全局样式
 import './assets/base.css'
 
