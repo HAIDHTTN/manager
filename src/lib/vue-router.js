@@ -8,6 +8,7 @@ Vue.use(VueRouter)
 import login from '../components/login.vue'
 import main from '../components/main.vue'
 import users from '../components/users.vue'
+import roles from '../components/roles.vue'
 // 定义路由
 const routes=[
     {
@@ -23,6 +24,10 @@ const routes=[
            {
             path:'users',
             component:users
+           } ,
+           {
+            path:'roles',
+            component:roles
            } 
         ]
           

@@ -91,8 +91,8 @@ export default {
         userData: []
     };
   },
-  created() {
-    this.$axios
+  async created() {
+    let res=await this.$axios
       .get("users", {
         params: {
          
@@ -102,12 +102,9 @@ export default {
           pagesize: 10
         }
       })
-      .then(res => {
-        console.log(res);
-        this.userData = res.data.data.users;
+       this.userData = res.data.data.users;
         this.total=res.data.data.total;
         this. pagenum=res.data.data.pagenum;
-      });
   }
 };
 </script>
