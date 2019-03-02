@@ -1,7 +1,6 @@
 import axios from 'axios'
 // import Vue from 'vue'
 import {Message} from 'element-ui'
-
 // 设置基地址
 axios.defaults.baseURL = "http://localhost:8888/api/private/v1/";
 

@@ -66,6 +66,7 @@
 <script>
 import breadcrumb from "./breadcrumb";
 export default {
+  name:'mains',
   // components: {
   //     breadcrumb
   //     },

@@ -12,10 +12,14 @@ import router from "./lib/vue-router"
 // 引入组件面包屑
 import breadcrumb from './components/breadcrumb.vue'
 Vue.component('breadcrumb', breadcrumb)
+// 导入moment.js
+import moment from 'moment'
 // 导入全局样式
 import './assets/base.css'
-
-
+// 过滤器
+Vue.filter('switchTime',function(value){
+  return moment(value).format('YYYY-MM-DD-hh:mm:ss');
+})
 Vue.config.productionTip = false
 
 new Vue({

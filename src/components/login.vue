@@ -23,7 +23,7 @@
 
 <script>
 export default {
-  name: "app",
+  name: "login",
   data() {
     return {
       // 表单数据
